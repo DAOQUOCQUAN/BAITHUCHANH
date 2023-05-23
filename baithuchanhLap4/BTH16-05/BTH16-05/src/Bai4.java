@@ -56,14 +56,12 @@ public class Bai4 {
         }
     }
 
-    HashSet<String> stdSet;
-    HashSet<String> stdSet1;
-    Iterator<String> iterator = strSet1.iterator();
+    Iterator<String> them = strSet1.iterator();
     {
 
-        while (iterator.hasNext()) {
-            String eString = iterator.next();
-            stdSet.add(eString);
+        while (them.hasNext()) {
+            String str = them.next();
+            stdSet.add(str);
         }
         System.out.println("Danh sach cac loai trai cay trong stdSet sau khi them la:");
         System.out.println(stdSet);
